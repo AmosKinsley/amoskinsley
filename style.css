@@ -1,0 +1,273 @@
+/* Estilo geral */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+body{
+background-color: #1e1f2f;
+height: 100vh;
+}
+
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+   display: flex;
+}
+
+.btn-contato button{
+    padding:10px 40px ;
+    font-size: 18px;
+    font-weight: 700px;
+    background-color:#0000FF ; 
+    border: 0 ;
+    border-radius: 30px;
+    cursor:pointer;
+    color: white;
+    transition: .2s;
+}
+h2.titulo{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color:#0000FF
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #6A5ACD;
+    transform: scale(1.05);
+
+}
+/*  Estilo do cabeçalho */
+
+
+
+header{
+    padding:40px 4% ;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color:white;
+    text-decoration: none;
+    
+}
+
+header nav ul{
+    list-style-type: none;
+    font-size: 27px;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px
+}
+
+.interface .logo img{
+    width: 150px;
+    height: auto;
+    border: 0;
+    border-radius: 30px;
+}
+
+.interface .img-topo-site img{
+    width: 300px;
+    
+    border-radius: 15%;
+}
+
+
+/* Estyilo do topo do site */
+
+
+
+
+section.topo-do-site{
+    padding: 40px 4%;
+    position:relative;
+    top: 90px;
+}
+
+section.topo-do-site.flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    
+}
+
+.topo-do-site h1{
+    color: white;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* estilos dos hobbies (especialidade pra ele)*/
+
+section.hobbies{
+    margin-top: 230px;
+    padding: 40px 4%;
+    
+}
+
+section.hobbies.flex{
+    gap: 60px;
+}
+
+.hobbies .hobbies-box{
+    color: #fff;
+    padding: 50px;
+    border: 0.5px solid #0000FF;
+    border-radius:30px;
+    margin: top 55px; ;
+    gap: 60px;
+    transition: .2s;
+}
+
+.hobbies .hobbies-box img{
+    width: 300px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    margin:15px 0;
+    
+}
+.hobbies .hobbies-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff5d;
+}
+
+/* falando do video */
+section.video{
+    padding: 40px 4%;
+    margin-top: 230px;
+}
+
+section.video.flex{
+    align-items: center;
+    gap: 100px;
+}
+
+section.video h2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;   
+}
+
+section.video h2{
+    color: #0000FF;
+}
+
+section.video p{
+    color: #fff;
+    margin-right: 40px
+}
+
+
+
+
+/* estilo do rodapé */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex{
+    justify-content: space-between;
+
+}
+
+footer .interface .line-footer .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0000FF;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.btn-social button:hover{
+    box-shadow: 0 0 8px #0000FF;
+    transform: scale(1.05);
+}
+
+footer .line-footer{
+    padding: 20px 0;    
+}
+
+.borda{
+    border-top: 2px solid #0000FF;
+}
+
+footer .line-footer p i{
+    color: #0000FF;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+    margin-top: 30px;
+}
+
+footer .interface .logo-footer img{
+    width: 150px;
+    height: auto;
+    border: 0;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1020px){
+    /* classes gerais */
+    .fkex{
+        flex-direction: column;
+    }
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+
+
+    /* cabeçalho */
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+}
+    
