@@ -255,7 +255,7 @@ footer .interface .logo-footer img{
 
 @media screen and (max-width: 1020px){
     /* classes gerais */
-    .fkex{
+    .flex{
         flex-direction: column;
     }
     h2.titulo{
